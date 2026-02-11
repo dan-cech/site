@@ -1,4 +1,109 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(44, 40, 49);
     margin: 0;
+}
+
+body {
+    scrollbar-width: none;      /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;              /* Chrome, Safari */
+}
+
+h1, h2, a {
+    font-family: sans-serif;
+    color: white;
+    font-weight: 200;
+}
+
+/*.....NAVIGATION BAR.....*/
+.nav-bar {
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(67, 67, 67);
+}
+
+.nav-bar .content{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(52, 52, 52);
+    margin-left: auto;
+    justify-content: center;
+    gap: 5%;
+    font-size: 25px;
+    align-items: center;
+    display: flex;
+}
+
+.nav-bar .content a{
+    transition: 0.1s;
+    text-decoration: none;
+    padding: 1%;
+}
+.nav-bar .content a:hover{
+    transition: 0.1s;
+    transform: scale(1.2);
+    background: rgb(118, 118, 118);
+}
+
+.nav-bar .logo{
+    width: 6rem;
+    height: 6rem;
+    display: block;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.nav-bar .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/*'''''NAVIGATION BAR'''''*/
+
+.row {
+    display: flex;
+    justify-content:flex-start;
+}
+
+.greeting {
+    display: block;
+    width: 50rem;
+    height: 30rem;
+    margin-left: 1rem;
+    margin-top: 5rem;
+}
+
+.greeting h1{
+    font-size: 70px;
+    margin-bottom: 0;
+    margin-left: 2%;
+}
+.greeting h2{
+    font-size: 30px;
+    margin-left: 2%;
+}
+
+.greeting .row{
+    display: flex;
+    gap: 4%;
+    width: 90%;
+    height: 15%;
+    margin-left: 2%;
+}
+
+.greeting .row img{
+    transition: 0.1s;
+    filter: brightness(0) invert(1);
+}
+.greeting .row img:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
 }
