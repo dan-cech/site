@@ -1,34 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daniel Čech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="styles/style.css">
-  <title>dan-cech - portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <div class="nav-bar">
-    <div class="content">
-      <a href="#" class="sound-btn">Skills</a>
-      <a href="#" class="sound-btn">Projects</a>
-      <a href="#" class="sound-btn">Contact me</a>
-      <a href="#" class="sound-btn">Certificates</a>
-      <a href="#" class="sound-btn">Experiences</a>
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">dan-cech.dev</a>
+  <ul class="nav-links">
+    <li><a href="#projects">projects</a></li>
+    <li><a href="#gallery">gallery</a></li>
+    <li><a href="#contact">contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-line"></div>
+  <p class="hero-tag">available for work</p>
+  <h1 class="hero-name">Daniel<br><em>Čech</em></h1>
+  <p class="hero-bio">Full-stack developer crafting clean, purposeful digital experiences. I like systems that are simple, fast, and honest.</p>
+
+  <!-- SOCIAL LINKS -->
+  <div class="socials">
+    <!-- GitHub -->
+    <a href="#" class="social-link" aria-label="GitHub">
+      <svg viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.4-.5-1.6.1-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0C17 5.1 18 5.4 18 5.4c.7 1.6.2 2.8.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+    </a>
+    <!-- LinkedIn -->
+    <a href="#" class="social-link" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24"><path d="M20.4 20.4h-3.4v-5.4c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.5H9.7V9h3.3v1.6h.1a3.6 3.6 0 0 1 3.2-1.8c3.4 0 4.1 2.3 4.1 5.2v6.4zM5.3 7.4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm1.7 13H3.6V9h3.4v11.4zM22.2 0H1.8A1.8 1.8 0 0 0 0 1.8v20.4A1.8 1.8 0 0 0 1.8 24h20.4A1.8 1.8 0 0 0 24 22.2V1.8A1.8 1.8 0 0 0 22.2 0z"/></svg>
+    </a>
+    <!-- Twitter/X -->
+    <a href="#" class="social-link" aria-label="Twitter / X">
+      <svg viewBox="0 0 24 24"><path d="M18.9 1h3.7l-8 9.2L24 23h-7.4l-5.8-7.5L4.5 23H.8l8.6-9.8L0 1h7.6l5.2 6.9L18.9 1zm-1.3 19.8h2l-13-17.2H4.4l13.2 17.2z"/></svg>
+    </a>
+    <!-- Dribbble -->
+    <a href="#" class="social-link" aria-label="Dribbble">
+      <svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm8 5.3a10.1 10.1 0 0 1 2.3 5.5c-.4-.1-3.8-.8-7.2-.3-.1-.2-.2-.4-.3-.7l-.8-1.8c3.4-1.4 5-3.3 6-4.7zM12 2c2.6 0 5 .9 6.8 2.5-.9 1.2-2.4 2.9-5.6 4.2C11.6 6.2 9.9 3.6 9.6 3a10.2 10.2 0 0 1 2.4-.3zM7.4 3.8c.3.4 2 3 3.7 5.6-4.7 1.2-8.8 1.2-9.3 1.2A10.2 10.2 0 0 1 7.4 3.8zM2 12.1v-.3c.4 0 5.3.1 10.3-1.4.3.6.6 1.2.8 1.8l-.6.2c-5.2 1.7-8 6.3-8.2 6.6A10 10 0 0 1 2 12zm10 10c-2.4 0-4.7-.8-6.4-2.2.2-.3 2.6-4.4 7.3-6.4h.2c1.3 3.4 1.8 6.3 2 7.5-1 .7-2 1.1-3.1 1.1zm5.1-1.8c-.1-1-.6-3.7-1.8-7 3.2-.5 6.1.3 6.5.4a10.1 10.1 0 0 1-4.7 6.6z"/></svg>
+    </a>
+    <!-- Email -->
+    <a href="mailto:hello@example.com" class="social-link" aria-label="Email">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+    </a>
+  </div>
+</header>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <p class="section-label">01 — selected work</p>
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-grid">
+
+    <!-- Card 1
+         Jak vložit obrázek: nahraď src="" cestou k obrázku, např. src="images/dashboard.jpg"
+         Pokud obrázek nechceš, odstraň <img> a odkomentuj .card-img-placeholder div níže.
+    -->
+    <article class="card">
+      <div class="card-img-wrap">
+        <img src="assets/TERMINUS.png" alt="DataStream Dashboard"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="card-img-placeholder" style="display:none">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.2"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Terminus Remake</h3>
+        <p class="card-desc">Terminal based RPG dungeon crawler minigame built in Python</p>
+        <a href="https://github.com/dan-cech/Terminus-remake" target="_blank" class="card-link">View on GitHub →</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <p class="section-label">02 — visual work</p>
+  <h2 class="section-title">Design & Graphics</h2>
+
+  <div class="gallery-grid">
+
+    <!--
+      Jak vložit obrázek do galerie:
+      Nahraď src="" v každém <img> cestou k obrázku, např. src="images/brand.jpg"
+      Pokud obrázek nechceš, odstraň <img> a odkomentuj .gallery-placeholder div.
+    -->
+
+    <!-- Položka 1 -->
+    <div class="gallery-item">
+      <img src="assets/cechda-vizitky.png" alt="Studio Noir"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="gallery-placeholder" style="display:none; background:#111">BRAND IDENTITY</div>
+      <div class="gallery-overlay">
+        <p class="gallery-overlay-title">Studio Noir</p>
+        <p class="gallery-overlay-sub">Brand Identity · 2024</p>
+      </div>
+    </div>
+
+    <!-- Položka 2 -->
+    <div class="gallery-item">
+      <img src="assets/player_spritesheet.png" alt="Finance App"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="gallery-placeholder" style="display:none">UI DESIGN</div>
+      <div class="gallery-overlay">
+        <p class="gallery-overlay-title">Finance App</p>
+        <p class="gallery-overlay-sub">Mobile UI · 2024</p>
+      </div>
+    </div>
+
+    <!-- Položka 3 -->
+    <div class="gallery-item">
+      <img src="assets/cerny ptak.png" alt="DevConf 2024"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="gallery-placeholder" style="display:none; background:#0e1208">POSTER</div>
+      <div class="gallery-overlay">
+        <p class="gallery-overlay-title">DevConf 2024</p>
+        <p class="gallery-overlay-sub">Print · 2024</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="footer-left">
+    <strong>Daniel Čech</strong>
+    <span>Full-stack Developer · Mikulov, CZ</span>
+  </div>
+  <a href="mailto:hello@janmarek.dev" class="footer-cta">Get in touch →</a>
+  <p class="footer-copy">© 2026 Daniel Čech</p>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" id="lb-close">ESC — close</button>
+    <button class="lightbox-nav lightbox-prev" id="lb-prev" aria-label="Previous">
+      <svg viewBox="0 0 14 14"><polyline points="9,2 4,7 9,12"/></svg>
+    </button>
+    <div class="lightbox-content" id="lb-content"></div>
+    <button class="lightbox-nav lightbox-next" id="lb-next" aria-label="Next">
+      <svg viewBox="0 0 14 14"><polyline points="5,2 10,7 5,12"/></svg>
+    </button>
+    <div class="lightbox-meta">
+      <span class="lightbox-title" id="lb-title"></span>
+      <span class="lightbox-sub" id="lb-sub"></span>
     </div>
   </div>
+</div>
 
-  <div class="greeting">
-    <h1><strong>Daniel Čech</strong></h1>
-    <h2>Neumim nic sry.</h2>
-    <div class="row">
-      <img src="assets/github.svg">
-      <img src="assets/instagram.svg">
-      <img src="assets/steam.svg">
-    </div>
-  </div>
+<script>
+  const items = Array.from(document.querySelectorAll('.gallery-item'));
+  const lb        = document.getElementById('lightbox');
+  const lbContent = document.getElementById('lb-content');
+  const lbTitle   = document.getElementById('lb-title');
+  const lbSub     = document.getElementById('lb-sub');
+  let current     = 0;
 
+  function getData(el) {
+    const img = el.querySelector('img');
+    return {
+      label: el.querySelector('.gallery-placeholder')?.textContent?.trim() || '',
+      title: el.querySelector('.gallery-overlay-title')?.textContent?.trim() || '',
+      sub:   el.querySelector('.gallery-overlay-sub')?.textContent?.trim() || '',
+      // Obrázek je platný jen pokud má src a byl úspěšně načten (naturalWidth > 0)
+      img:   (img && img.naturalWidth > 0) ? img.src : null,
+      bg:    el.querySelector('.gallery-placeholder')
+               ? getComputedStyle(el.querySelector('.gallery-placeholder')).backgroundColor
+               : '#141414'
+    };
+  }
 
-  <script src="script.js"></script>
+  function open(index) {
+    current = index;
+    const d = getData(items[current]);
+    lbContent.innerHTML = d.img
+      ? `<img src="${d.img}" alt="${d.title}">`
+      : `<span>${d.label}</span>`;
+    if (!d.img) lbContent.style.background = d.bg;
+    else lbContent.style.background = '';
+    lbTitle.textContent = d.title;
+    lbSub.textContent   = d.sub;
+    lb.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    lb.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  function navigate(dir) {
+    open((current + dir + items.length) % items.length);
+  }
+
+  items.forEach((el, i) => el.addEventListener('click', () => open(i)));
+  document.getElementById('lb-close').addEventListener('click', close);
+  document.getElementById('lb-prev').addEventListener('click', () => navigate(-1));
+  document.getElementById('lb-next').addEventListener('click', () => navigate(1));
+  lb.addEventListener('click', e => { if (e.target === lb) close(); });
+  document.addEventListener('keydown', e => {
+    if (!lb.classList.contains('active')) return;
+    if (e.key === 'Escape')     close();
+    if (e.key === 'ArrowLeft')  navigate(-1);
+    if (e.key === 'ArrowRight') navigate(1);
+  });
+</script>
+
 </body>
 </html>
